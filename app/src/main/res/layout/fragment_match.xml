@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#fff"
+        android:padding="30dp"
+        tools:context=".fragments.MatchFragment">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:padding="30dp"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tv_scoreA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="50dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_teamA"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Equipo 1"
+                    android:textColor="#000"
+                    android:textAllCaps="true"/>
+
+            <Button
+                    android:id="@+id/btn_teamA_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+            <Button
+                    android:id="@+id/btn_teamA_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+            <Button
+                    android:id="@+id/btn_teamA_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:textColor="#f48024"
+                    android:id="@+id/tv_scoreB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="50dp"/>
+
+            <TextView
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_teamB"
+                    android:text="Equipo 1"
+                    android:textColor="#000"
+                    android:textAllCaps="true"/>
+
+            <Button
+                    android:id="@+id/btn_teamB_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+            <Button
+                    android:id="@+id/btn_teamB_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+            <Button
+                    android:id="@+id/btn_teamB_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp"
+            android:gravity="center">
+
+
+
+        <Button
+                android:id="@+id/btnReset"
+                android:layout_width="60dp"
+                android:layout_height="62dp"
+                android:background="@drawable/reset"
+                android:textColor="#fff"/>
+
+        <Button
+                android:id="@+id/btnEnd"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:layout_margin="10sp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"
+                android:textColor="#fff"
+                android:text="Terminar"/>
+
+    </LinearLayout>
+</LinearLayout>
