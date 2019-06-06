@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:padding="25dp"
+              android:background="#fff"
+              android:layout_gravity="center"
+              tools:context=".fragments.DetailFragment">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+        <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_scoreA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_scoreB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:gravity="center"
+                    android:textColor="#f48024"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+        <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_teamA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#000"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#000"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_teamB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GUEST"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#000"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: ##/##/####"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000"/>
+
+        <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: ##:##"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginBottom="20dp"/>
+
+        <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado por definir"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#FFAA00"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

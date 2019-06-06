@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_height="match_parent"
-        tools:context=".fragments.NewFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".fragments.NewFragment"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="20dp"
+              android:background="#EEEEEE">
 
     <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:src="@drawable/whistle"/>
 
     <EditText
-            android:layout_width="300dp"
+            android:id="@+id/et_homeTeam"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_eA"
-            android:hint="Equipo 1"
-            android:focusable="true"/>
+            android:hint="Equipo A"
+            android:background="#fff"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            android:padding="20dp"/>
 
     <EditText
-            android:layout_width="300dp"
+            android:id="@+id/et_guestTeam"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_eB"
-            android:hint="Equipo 2"
-            android:layout_marginTop="10dp"/>
+            android:hint="Equipo B"
+            android:background="#fff"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"/>
 
     <Button
-            android:id="@+id/btnSave"
+            android:id="@+id/btn_createNewMatch"
             android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:background="#0097f6"

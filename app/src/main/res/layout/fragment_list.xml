@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".fragments.ListFragment"
+              android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_matches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EEEEEE">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:padding="5dp">
+        <Button
+                android:id="@+id/btn_addMatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comenzar partido"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>
